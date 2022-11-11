@@ -139,6 +139,7 @@ li {
   padding: 20px 0;
 }
 .gallery ul li { 
+  position: relative;
   flex-basis: 20%;
   height: 100%; 
   background-color: green;
@@ -149,6 +150,21 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+.gallery ul li::before { 
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  width: 100%;
+  font-size: 13px; }
+
+.gallery ul li:nth-of-type(1)::before { content: 'Explore The World'; }
+.gallery ul li:nth-of-type(2)::before { content: 'Wild Forest'; }
+.gallery ul li:nth-of-type(3)::before { content: 'Sunny Beach'; }
+.gallery ul li:nth-of-type(4)::before { content: 'City On Winter'; }
+.gallery ul li:nth-of-type(5)::before { content: 'Mountains - clouds'; }
+
+
 
 /*=================================
   main styling ends here
