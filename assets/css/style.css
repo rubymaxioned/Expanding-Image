@@ -80,6 +80,12 @@ sub { bottom: -.25em; }
 .cf { *zoom: 1; }
 
 /*for all*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -124,11 +130,37 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.gallery ul {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.gallery ul li { 
+  flex-basis: 20%;
+  height: 100%; 
+  background-color: green;
+  transition: all .3s;
+}
 
+/* .gallery ul li:hover {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%; */
+  /* flex: 1 1 100%; */
+/* } */
 
-
-
-
+img {
+  height: 100%;
+  object-fit: cover;
+}
+/* .gallery ul li:nth-of-type(1) { flex-grow: 1; }
+.gallery ul li:nth-of-type(2) { flex-grow: 3; }
+.gallery ul li:nth-of-type(3) { flex-grow: 1; } 
+.gallery ul li:nth-of-type(3) { flex-grow: 1; } 
+.gallery ul li:nth-of-type(3) { flex-grow: 1; }  */
 
 
 
