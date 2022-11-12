@@ -159,6 +159,8 @@ img {
   text-align: center;
 }
 
+.gallery ul li:nth-of-type(1) { flex-basis: 100%; }
+
 .gallery ul li:nth-of-type(1)::before { content: 'Explore The World'; }
 .gallery ul li:nth-of-type(2)::before { content: 'Wild Forest'; }
 .gallery ul li:nth-of-type(3)::before { content: 'Sunny Beach'; }
