@@ -1,12 +1,14 @@
 var li = document.querySelectorAll(".gallery ul li");
-console.log(li);
+var span = document.querySelectorAll("span");
+span[0].classList.add('show');
 
-li.forEach(function(list){
-
-    list.addEventListener("click",function(){
-        // for(var i=0; i<li.length; i++){
-        //     li[i].style.flexBasis = "20%";
-        // }
-        list.style.flex = "1 1 100%";
+li.forEach(function (list,index) {
+    list.addEventListener("click", function () {
+        for (var i = 0; i < li.length; i++) {
+            li[i].style.flexBasis = "20%";
+            span[i].classList.remove('show');
+        }
+        list.style.flex = "1 1 100%"; 
+        span[index].classList.add('show');
     });
 })
