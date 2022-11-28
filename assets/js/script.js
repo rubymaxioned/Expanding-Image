@@ -1,6 +1,6 @@
 var li = document.querySelectorAll(".gallery ul li");
 var span = document.querySelectorAll("span");
-console.log(span);
+span[0].classList.add('show');
 
 li.forEach(function (list,index) {
     list.addEventListener("click", function () {
